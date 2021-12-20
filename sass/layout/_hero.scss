@@ -28,18 +28,12 @@
     &__title {
       width: 360px;
     }
-
-    @include mq(tablet) {
-      max-width: 768px;
-    }
-    @include mq(desktop) {
-      width: 1200px;
-    }
-
-    @media screen and (min-width: 480px) {
-    }
   }
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
+    max-width: 768px;
+  }
+
+  @include mq(desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
     min-height: 600px;
@@ -49,7 +43,6 @@
       width: 696px;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 30px;
     }
   }
 }
