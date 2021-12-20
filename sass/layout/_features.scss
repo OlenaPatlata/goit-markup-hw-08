@@ -5,14 +5,11 @@
 }
 
 .features-list {
-  @include flex(between);
-  width: 1170px;
+  width: 100%;
+  margin: -15px;
   &__item {
-    width: 270px;
-    height: 251px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    max-width: 100%;
+    margin: 15px;
   }
   &__icon {
     background-color: var(--additional-background-color);
@@ -28,5 +25,27 @@
   &__text {
     @include font(14px, 1.71);
     color: var(--additional-text-color);
+  }
+
+  @include mq(mobile) {
+    max-width: 450px;
+  }
+  @include mq(tablet-only) {
+    max-width: 738px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__item {
+      width: calc(100% / 2 - 30px);
+      max-height: 251px;
+    }
+  }
+  @include mq(desktop) {
+    @include flex(between);
+    max-width: 1170px;
+    &__item {
+      width: 270px;
+      max-height: 251px;
+    }
   }
 }
