@@ -3,14 +3,22 @@
   background-color: var(--futer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  height: 252px;
-  &__container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 1170px;
+  // &__container {
+  //   margin-bottom: 60px;
+  // }
+  &__container-top {
+    margin-bottom: 60px;
+    // @include flex(center);
   }
 }
 .logo__footer {
   margin-bottom: 20px;
 }
+
+// height: 252px;
+// &__container {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: flex-start;
+//   width: 1170px;
+// }
