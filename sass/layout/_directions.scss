@@ -10,7 +10,7 @@
     text-align: center;
   }
   // &__list {
-  //   @extend %between-list;
+  //   @include flex(between);
   //   width: 1170px;
   // }
   &__item {
@@ -29,7 +29,7 @@
     @include font(14px, 1.14, $fw: 700);
     text-align: center;
     text-transform: uppercase;
-    // @extend %center-list;
+    // @include flex(center);
     color: var(--additional-accent-color);
   }
 }

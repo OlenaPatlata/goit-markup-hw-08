@@ -11,12 +11,12 @@
 
 .clients-list {
   width: 1170px;
-  @extend %between-list;
+  @include flex(between);
   &__item:not(:last-child) {
     margin-right: 30px;
   }
   &__link {
-    @extend %center-list;
+    @include flex(center);
     width: 170px;
     height: 92px;
     border: 1px solid var(--icon-color);

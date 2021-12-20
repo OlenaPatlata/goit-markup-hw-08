@@ -27,18 +27,6 @@
   clip: rect(0 0 0 0);
 }
 
-.primary-btn, .modal__close-btn, .check-text, .check-text span, .social, .social__link, .features-list__icon, .clients-list__link, .filters {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-list, .contacts__link, .header__container, .features-list, .team-list, .clients-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 /* ---------------BODY----------------- */
 body {
   font-family: 'Roboto', 'Sans Serif';
@@ -146,6 +134,9 @@ svg {
   line-height: 1.14;
   font-weight: 500;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (max-width: 767.98px) {
@@ -203,8 +194,8 @@ svg {
     line-height: 1.14;
     font-weight: 500;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
   }
   .contacts__item:not(:last-child) {
     margin-right: 30px;
@@ -220,6 +211,9 @@ svg {
 }
 
 .contacts__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: inherit;
 }
@@ -241,6 +235,9 @@ svg {
   line-height: 1.88;
   font-weight: 700;
   letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 200px;
   height: 50px;
   color: var(--additional-accent-color);
@@ -304,6 +301,9 @@ svg {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   color: var(--logo-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -406,6 +406,9 @@ placeholder {
   line-height: 1.71;
   font-weight: 400;
   color: var(--additional-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .check-text span {
@@ -413,6 +416,9 @@ placeholder {
   height: 15px;
   border-radius: 2px;
   border: 1px solid var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 8px;
 }
 
@@ -427,6 +433,9 @@ placeholder {
 }
 
 .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 206px;
 }
 
@@ -435,6 +444,9 @@ placeholder {
 }
 
 .social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -578,6 +590,12 @@ placeholder {
   }
 }
 
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* ---------------HERO----------------- */
 .hero {
   background-color: var(--futer-background-color);
@@ -606,7 +624,7 @@ placeholder {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) {
+@media (min-width: 480px) {
   .hero {
     max-width: 480px;
   }
@@ -615,13 +633,19 @@ placeholder {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 480px) and (min-width: 768px) {
   .hero {
     max-width: 768px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 480px) and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -646,6 +670,9 @@ placeholder {
 }
 
 .features-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 1170px;
 }
 
@@ -660,6 +687,9 @@ placeholder {
 
 .features-list__icon {
   background-color: var(--additional-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 120px;
   margin-bottom: 30px;
 }
@@ -735,6 +765,9 @@ placeholder {
 }
 
 .team-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 1170px;
 }
 
@@ -791,6 +824,9 @@ placeholder {
 
 .clients-list {
   width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .clients-list__item:not(:last-child) {
@@ -798,6 +834,9 @@ placeholder {
 }
 
 .clients-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
@@ -842,6 +881,9 @@ placeholder {
 }
 
 .filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-bottom: 16px;
   margin-bottom: 34px;
 }

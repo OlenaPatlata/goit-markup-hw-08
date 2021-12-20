@@ -18,6 +18,6 @@
     padding-bottom: 25px;
   }
   &__container {
-    @extend %between-list;
+    @include flex(between);
   }
 }

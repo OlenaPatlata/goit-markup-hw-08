@@ -34,3 +34,12 @@
     }
   }
 }
+@mixin flex($param) {
+  display: flex;
+  align-items: center;
+  @if $param == center {
+    justify-content: center;
+  } @else if $param == between {
+    justify-content: space-between;
+  }
+}

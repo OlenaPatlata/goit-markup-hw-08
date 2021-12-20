@@ -1,5 +1,5 @@
 .filters {
-  @extend %center-list;
+  @include flex(center);
   padding-bottom: 16px;
   margin-bottom: 34px;
   &__item:not(:last-child) {

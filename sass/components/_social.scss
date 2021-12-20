@@ -1,11 +1,11 @@
 .social {
-  @extend %center-list;
+  @include flex(center);
   width: 206px;
   &__item:not(:last-child) {
     margin-right: 10px;
   }
   &__link {
-    @extend %center-list;
+    @include flex(center);
     width: 44px;
     height: 44px;
     border-radius: 50%;

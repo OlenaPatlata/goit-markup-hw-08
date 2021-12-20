@@ -11,7 +11,7 @@
   }
 }
 .team-list {
-  @extend %between-list;
+  @include flex(between);
   width: 1170px;
   &__card {
     background-color: var(--additional-accent-color);
