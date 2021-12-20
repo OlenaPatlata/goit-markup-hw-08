@@ -1,0 +1,29 @@
+.social {
+  @extend %center-list;
+  width: 206px;
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__link {
+    @extend %center-list;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--icon-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--icon-color-hover);
+    }
+  }
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.social__link--dark {
+  background-color: var(--additional-icon-color-footer);
+  color: var(--additional-accent-color);
+}

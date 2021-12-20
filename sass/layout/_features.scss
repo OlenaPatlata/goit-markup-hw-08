@@ -1,0 +1,32 @@
+/* ---------------SECTION FEATURES----------------- */
+.features {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.features-list {
+  @extend %between-list;
+  width: 1170px;
+  &__item {
+    width: 270px;
+    height: 251px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__icon {
+    background-color: var(--additional-background-color);
+    @extend %center-list;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+  &__title {
+    @include font(14px, 1.14, $fw: 700);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__text {
+    @include font(14px, 1.71);
+    color: var(--additional-text-color);
+  }
+}

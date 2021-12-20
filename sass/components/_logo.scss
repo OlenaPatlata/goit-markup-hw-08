@@ -1,0 +1,15 @@
+.logo {
+  font-family: 'Raleway', 'Sans Serif';
+  @include font(26px, 1.2, $fw: 700);
+  display: block;
+  margin-right: 93px;
+  &__first-word {
+    color: var(--accent-color);
+  }
+  &__second-word {
+    color: var(--logo-text-color);
+  }
+  &__third-word {
+    color: var(--additional-accent-color);
+  }
+}

@@ -1,0 +1,10 @@
+/* ------------------HEDER------------------ */
+.header {
+  background-color: var(--additional-accent-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--border-line-heder);
+  &__container {
+    @extend %center-list;
+  }
+}
