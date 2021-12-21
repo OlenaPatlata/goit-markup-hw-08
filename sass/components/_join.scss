@@ -1,6 +1,4 @@
 .join {
-  padding-top: 12px;
-  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,5 +11,7 @@
   }
   @include mq(desktop) {
     display: block;
+    padding-top: 12px;
+    padding-bottom: 40px;
   }
 }

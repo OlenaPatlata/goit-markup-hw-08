@@ -11,15 +11,7 @@
   &__third-word {
     color: var(--additional-accent-color);
   }
-  @include mq(mobile) {
-    // padding-top: 16px;
-    // padding-bottom: 16px;
-  }
-  @include mq(tablet) {
-    // margin-right: 88px;
-  }
   @include mq(desktop) {
     @include font(26px, 1.2, $fw: 700);
-    // margin-right: 93px;
   }
 }
