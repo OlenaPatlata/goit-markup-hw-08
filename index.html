@@ -132,15 +132,51 @@
           <h2 class="directions__title">Чем мы занимаемся</h2>
           <ul class="directions__list list">
             <li class="directions__item">
-              <img src="./images/box-a.jpg" width="370" height="294" alt="Пример работы №1" />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/img-directions/img-directions1-desk-1x-min.jpg 1x,
+                    ./images/img-directions/img-directions1-desk-2x-min.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/img-directions/img-directions1-desk-1x-min.jpg"
+                  alt="Пример работы №1"
+                />
+              </picture>
               <p class="directions__text">Десктопные приложения</p>
             </li>
             <li class="directions__item">
-              <img src="./images/box-b.jpg" width="370" height="294" alt="Пример работы №2" />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/img-directions/img-directions2-desk-1x-min.jpg 1x,
+                    ./images/img-directions/img-directions2-desk-2x-min.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/img-directions/img-directions2-desk-1x-min.jpg"
+                  alt="Пример работы №2"
+                />
+              </picture>
               <p class="directions__text">Мобильные приложения</p>
             </li>
             <li class="directions__item">
-              <img src="./images/box-c.jpg" width="370" height="294" alt="Пример работы №3" />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/img-directions/img-directions3-desk-1x-min.jpg 1x,
+                    ./images/img-directions/img-directions3-desk-2x-min.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/img-directions/img-directions3-desk-1x-min.jpg"
+                  alt="Пример работы №3"
+                />
+              </picture>
               <p class="directions__text">Дизайнерские решения</p>
             </li>
           </ul>

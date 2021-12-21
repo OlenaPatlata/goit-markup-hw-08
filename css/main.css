@@ -819,6 +819,12 @@ placeholder {
 }
 
 /* ---------------SECTION DIRECTIONS----------------- */
+@media (max-width: 1199.98px) {
+  .directions {
+    display: none;
+  }
+}
+
 @media (min-width: 1200px) {
   .directions {
     padding-top: 47px;
@@ -832,6 +838,12 @@ placeholder {
     margin-top: 0;
     margin-bottom: 50px;
     text-align: center;
+  }
+  .directions__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
   }
   .directions__item {
     position: relative;
@@ -851,6 +863,9 @@ placeholder {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--additional-accent-color);
   }
 }

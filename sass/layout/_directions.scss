@@ -1,5 +1,9 @@
 /* ---------------SECTION DIRECTIONS----------------- */
 .directions {
+  @include mq(not-desktop) {
+    display: none;
+  }
+
   @include mq(desktop) {
     padding-top: 47px;
     padding-bottom: 94px;
@@ -10,10 +14,10 @@
       margin-bottom: 50px;
       text-align: center;
     }
-    // &__list {
-    //   @include flex(between);
-    //   width: 1170px;
-    // }
+    &__list {
+      @include flex(between);
+      width: 1170px;
+    }
     &__item {
       position: relative;
       &:not(:last-child) {
@@ -30,7 +34,7 @@
       @include font(14px, 1.14, $fw: 700);
       text-align: center;
       text-transform: uppercase;
-      // @include flex(center);
+      @include flex(center);
       color: var(--additional-accent-color);
     }
   }
