@@ -47,6 +47,8 @@ h6 {
 img,
 svg {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -900,7 +902,7 @@ placeholder {
 }
 
 .team-list {
-  max-width: 450px;
+  width: 100%;
   margin: -30px;
 }
 
@@ -908,7 +910,6 @@ placeholder {
   background-color: var(--additional-accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  max-width: 450px;
   margin: 30px;
   text-align: center;
   display: block;
@@ -941,7 +942,6 @@ placeholder {
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .team-list {
-    max-width: 768px;
     margin: -15px;
     display: flex;
     flex-wrap: wrap;
@@ -958,14 +958,13 @@ placeholder {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1170px;
     margin: -15px;
   }
   .team-list__card {
     background-color: var(--additional-accent-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    width: 270px;
+    width: calc(100% / 4 - 30px);
     margin: 15px;
   }
   .team-list__description {
