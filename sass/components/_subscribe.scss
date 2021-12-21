@@ -1,14 +1,12 @@
 .subscribe {
-  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   &__form {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    display: block;
   }
   &__field {
-    width: 358px;
-    padding-top: 12px;
-    margin-right: 12px;
+    max-width: 450px;
   }
   &__label {
     @include font(14px, 1.14, $fw: 700);
@@ -32,7 +30,21 @@
       outline: none;
     }
   }
+  @include mq(desktop) {
+    display: block;
+    &__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    &__field {
+      max-width: 358px;
+      padding-top: 12px;
+      margin-right: 12px;
+    }
+  }
 }
+
 placeholder {
   @include font(16px, 1.25);
   letter-spacing: 0.01em;

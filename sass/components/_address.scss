@@ -3,6 +3,7 @@
     text-align: center;
     font-style: normal;
     @include font(14px, 1.71);
+    margin-bottom: 60px;
     &__item:not(:last-child) {
       margin-bottom: 9px;
     }
@@ -25,7 +26,7 @@
     font-style: normal;
     @include font(14px, 1.71);
     &__item:not(:last-child) {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
     }
     &__post {
       color: var(--additional-accent-color);

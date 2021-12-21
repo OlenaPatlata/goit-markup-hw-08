@@ -1,11 +1,17 @@
 .join {
   padding-top: 12px;
   padding-bottom: 40px;
-  margin-right: 93px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   &__text {
     @include font(14px, 1.14, $fw: 700);
     text-transform: uppercase;
     color: var(--additional-accent-color);
     margin-bottom: 20px;
+  }
+  @include mq(desktop) {
+    display: block;
   }
 }
