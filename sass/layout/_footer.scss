@@ -3,9 +3,6 @@
   background-color: var(--futer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  // &__container {
-  //   margin-bottom: 60px;
-  // }
   &__container-top {
     margin-bottom: 60px;
     @include mq(tablet) {
@@ -13,17 +10,104 @@
       justify-content: center;
       align-items: flex-start;
     }
-    // @include flex(cen;
+    @include mq(desktop) {
+      margin-right: 93px;
+    }
+  }
+  &__container.container {
+    @include mq(desktop) {
+      display: flex;
+      align-items: start;
+      justify-content: start;
+    }
+  }
+}
+.footer__wrapp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include font(14px, 1.71);
+  // margin-bottom: 60px;
+  @include mq(tablet-only) {
+    margin-right: 165px;
+  }
+  @include mq(desktop) {
+    align-items: start;
+    margin-right: 70px;
+  }
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  margin-bottom: 60px;
+  &__list {
+    @include mq(not-desktop) {
+      text-align: center;
+    }
+    @include mq(desktop) {
+      text-align: start;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  &__post {
+    color: var(--additional-accent-color);
+  }
+  &__link {
+    color: var(--mailto-tel-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  @include mq(tablet) {
+    margin-bottom: 0;
+    text-align: center;
+    font-style: normal;
+    @include font(14px, 1.71);
+    &__item:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    &__post {
+      color: var(--additional-accent-color);
+    }
+    &__link {
+      color: var(--mailto-tel-text-color);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+      }
+    }
+  }
+  @include mq(desktop) {
+    flex-shrink: 0;
+    margin-bottom: 0;
+    font-style: normal;
+    @include font(14px, 1.71);
+    &__item:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+  &__post {
+    color: var(--additional-accent-color);
+  }
+  &__link {
+    color: var(--mailto-tel-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
 .logo__footer {
   margin-bottom: 20px;
 }
-
-// height: 252px;
-// &__container {
-//   display: flex;
-//   justify-content: flex-start;
-//   align-items: flex-start;
-//   width: 1170px;
-// }
