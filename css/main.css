@@ -1082,8 +1082,8 @@ placeholder {
 
 .filters {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-content: start;
   padding-bottom: 16px;
   margin-bottom: 34px;
 }
@@ -1109,6 +1109,20 @@ placeholder {
   background-color: var(--accent-color);
   color: var(--additional-accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 767px) {
+  .filters__item:nth-child(-1n + 3) {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* ---------------PROJECTS----------------- */

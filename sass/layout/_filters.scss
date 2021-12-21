@@ -1,5 +1,8 @@
 .filters {
-  @include flex(center);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+
   padding-bottom: 16px;
   margin-bottom: 34px;
   &__item:not(:last-child) {
@@ -22,5 +25,13 @@
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
     }
+  }
+  &__item:nth-child(-1n + 3) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+  @include mq(tablet) {
+    @include flex(center);
   }
 }
