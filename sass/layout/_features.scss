@@ -6,10 +6,20 @@
 
 .features-list {
   width: 100%;
-  margin: -15px;
+  @include mq(tablet) {
+    margin: -15px;
+  }
+
   &__item {
     max-width: 100%;
-    margin: 15px;
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+    @include mq(tablet) {
+      margin: 15px;
+    }
   }
   &__icon {
     background-color: var(--additional-background-color);
@@ -21,6 +31,7 @@
     @include font(14px, 1.14, $fw: 700);
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
   }
   &__text {
     @include font(14px, 1.71);

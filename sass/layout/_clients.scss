@@ -6,6 +6,9 @@
     @include font(28px, 1.17, $fw: 700);
     text-align: center;
     margin-bottom: 30px;
+    @include mq(desktop) {
+      @include font(36px, 1.17, $fw: 700);
+    }
   }
 }
 .clients-list {
@@ -16,7 +19,6 @@
   justify-content: center;
   &__item {
     margin: 15px;
-    width: 210px;
   }
   &__link {
     @include flex(center);
@@ -47,11 +49,10 @@
     }
   }
   @include mq(desktop) {
-    width: 1170px;
     @include flex(between);
     flex-wrap: nowrap;
     &__item {
-      min-width: 170px;
+      width: calc(100% / 6 - 30px);
     }
     &__link {
       @include flex(center);

@@ -889,12 +889,28 @@ placeholder {
 
 .features-list {
   width: 100%;
-  margin: -15px;
+}
+
+@media (min-width: 768px) {
+  .features-list {
+    margin: -15px;
+  }
 }
 
 .features-list__item {
   max-width: 100%;
-  margin: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .features-list__item {
+    margin: 15px;
+  }
 }
 
 .features-list__icon {
@@ -912,6 +928,7 @@ placeholder {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .features-list__text {
@@ -1036,16 +1053,32 @@ placeholder {
 
 .team-list {
   width: 100%;
-  margin: -30px;
+}
+
+@media (min-width: 768px) {
+  .team-list {
+    margin: -15px;
+  }
 }
 
 .team-list__card {
   background-color: var(--additional-accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin: 30px;
   text-align: center;
   display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .team-list__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team-list__card {
+    margin: 15px;
+  }
 }
 
 .team-list__description {
@@ -1119,6 +1152,14 @@ placeholder {
   margin-bottom: 30px;
 }
 
+@media (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.17;
+    font-weight: 700;
+  }
+}
+
 .clients-list {
   width: 100%;
   margin: -15px;
@@ -1129,7 +1170,6 @@ placeholder {
 
 .clients-list__item {
   margin: 15px;
-  width: 210px;
 }
 
 .clients-list__link {
@@ -1167,14 +1207,13 @@ placeholder {
 
 @media (min-width: 1200px) {
   .clients-list {
-    width: 1170px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
   }
   .clients-list__item {
-    min-width: 170px;
+    width: calc(100% / 6 - 30px);
   }
   .clients-list__link {
     display: flex;
@@ -1205,6 +1244,7 @@ placeholder {
 @media (min-width: 1200px) {
   .footer__container-top {
     margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 
@@ -1395,6 +1435,7 @@ placeholder {
 .projects__wrap {
   position: relative;
   overflow: hidden;
+  flex-grow: 1;
 }
 
 .projects__top-text {
@@ -1415,9 +1456,7 @@ placeholder {
 
 .projects__item {
   margin: 15px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.02, 1);
-  transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.02, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.02, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.02, 1), border-bottom 250ms cubic-bezier(0.4, 0, 0.02, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.02, 1);
 }
 
 .projects__item:hover, .projects__item:focus {
