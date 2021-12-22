@@ -302,8 +302,8 @@ svg {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  min-height: 581px;
+  width: 100%;
+  min-height: 609px;
   transform: translate(-50%, -50%);
   background: var(--additional-accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -344,6 +344,19 @@ svg {
   margin-bottom: 12px;
 }
 
+@media (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
 .modal-field {
   margin-bottom: 10px;
   display: block;
@@ -353,8 +366,13 @@ svg {
 
 .modal-field:last-of-type {
   margin-bottom: 30px;
-  padding-right: 10px;
-  padding-left: 10px;
+}
+
+@media (min-width: 1200px) {
+  .modal-field:last-of-type {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 .modal-label {
@@ -422,8 +440,8 @@ placeholder {
 }
 
 .check-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 11px;
+  line-height: 1.17;
   font-weight: 400;
   color: var(--additional-text-color);
   display: flex;
@@ -447,9 +465,17 @@ placeholder {
   border: none;
 }
 
+@media (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 400;
+  }
+}
+
 .check-link {
   color: var(--accent-color);
-  margin-left: 4px;
+  margin-left: 2px;
 }
 
 .social {
