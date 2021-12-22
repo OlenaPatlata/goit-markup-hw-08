@@ -30,7 +30,9 @@
     @include font(14px, 1.14, $fw: 700);
     text-transform: uppercase;
     margin-bottom: 10px;
-    text-align: center;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
   &__text {
     @include font(14px, 1.71);
