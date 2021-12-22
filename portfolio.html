@@ -30,7 +30,7 @@
             </li>
             <li class="nav-list__item">
               <a
-                class="nav-list__link nav-list__link--active nav-list__link--current link"
+                class="nav-list__link link nav-list__link--active nav-list__link--current"
                 href="./portfolio.html"
                 >Портфолио</a
               >
@@ -56,6 +56,103 @@
             >
           </li>
         </ul>
+      </div>
+      <button type="button" class="menu-open-btn">
+        <svg
+          class="header-btn__icon"
+          width="24"
+          height="16"
+          aria-label="Переключатель мобильного меню"
+        >
+          <use class="header-btn__menu-mob" href="./images/sprite.svg#icon-menu-mob"></use>
+        </svg>
+      </button>
+      <div class="mob-menu is-hidden">
+        <div class="mob-menu-container container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn">
+              <svg
+                class="header-btn__icon"
+                width="19"
+                height="19"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use class="header-btn__close-mob" href="./images/sprite.svg#icon-close-mob"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-nav-list__list list">
+              <li class="mob-menu-nav-list__item">
+                <a class="mob-menu-nav-list__link link" href="./index.html">Студия</a>
+              </li>
+              <li class="mob-menu-nav-list__item">
+                <a
+                  class="mob-menu-nav-list__link link mob-menu-nav-list__link--active"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu-nav-list__item">
+                <a class="mob-menu-nav-list__link link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="mob-menu-contacts list">
+              <li class="mob-menu-contacts__item">
+                <a class="mob-menu-contacts__link-tel link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-menu-contacts__item">
+                <a class="mob-menu-contacts__link-post link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu-social list">
+              <li class="mob-menu-social__item">
+                <a
+                  class="mob-menu-social__link link"
+                  href=""
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Ссылка на Instagram"
+                  >Instagram
+                </a>
+              </li>
+              <li class="mob-menu-social__item">
+                <a
+                  class="mob-menu-social__link link"
+                  href=""
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Ссылка на twitter"
+                  >Twitter
+                </a>
+              </li>
+              <li class="mob-menu-social__item">
+                <a
+                  class="mob-menu-social__link link"
+                  href=""
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Ссылка на facebook"
+                  >Facebook
+                </a>
+              </li>
+              <li class="mob-menu-social__item">
+                <a
+                  class="mob-menu-social__link link"
+                  href=""
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Ссылка на linkedin"
+                  >LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -466,7 +563,7 @@
       </section>
     </main>
     <!-- footer -->
-<!-- footer -->
+    <!-- footer -->
     <footer class="footer section">
       <div class="footer__container container">
         <div class="footer__container-top">
