@@ -5,7 +5,6 @@
 }
 
 .features-list {
-  width: 100%;
   @include mq(tablet) {
     margin: -15px;
   }
@@ -38,11 +37,7 @@
     color: var(--additional-text-color);
   }
 
-  @include mq(mobile) {
-    max-width: 450px;
-  }
   @include mq(tablet-only) {
-    max-width: 738px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -53,7 +48,7 @@
   }
   @include mq(desktop) {
     @include flex(between);
-    max-width: 1170px;
+
     &__item {
       width: 270px;
       max-height: 251px;
