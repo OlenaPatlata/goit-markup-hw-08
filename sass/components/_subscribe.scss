@@ -13,7 +13,7 @@
   }
   &__field {
     max-width: 450px;
-    @include mq(tablet) {
+    @include mq(mobile) {
       min-width: 450px;
     }
     @include mq(desktop) {

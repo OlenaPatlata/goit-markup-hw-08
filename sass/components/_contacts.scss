@@ -18,10 +18,10 @@
   &__item {
     color: var(--additional-text-color);
 
-    @include mq(tablet-only) {
-      margin-bottom: 10px;
-    }
     &:not(:last-child) {
+      @include mq(tablet-only) {
+        margin-bottom: 10px;
+      }
       @include mq(desktop) {
         margin-right: 30px;
       }

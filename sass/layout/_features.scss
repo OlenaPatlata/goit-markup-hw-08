@@ -1,7 +1,11 @@
 /* ---------------SECTION FEATURES----------------- */
 .features {
-  padding-top: 94px;
-  padding-bottom: 47px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
 }
 
 .features-list {

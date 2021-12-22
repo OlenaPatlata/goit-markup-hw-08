@@ -2,9 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   align-content: start;
-
-  padding-bottom: 16px;
-  margin-bottom: 34px;
+  margin-bottom: 40px;
   &__item:not(:last-child) {
     margin-right: 8px;
   }
@@ -33,5 +31,9 @@
   }
   @include mq(tablet) {
     @include flex(center);
+    margin-bottom: 30px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 50px;
   }
 }
